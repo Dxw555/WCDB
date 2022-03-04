@@ -140,6 +140,7 @@ public:
     Expr notGlob(const Expr &operand) const;
     Expr notMatch(const Expr &operand) const;
     Expr notRegexp(const Expr &operand) const;
+    Expr instr(const Expr &operand) const;
 
     Expr like(const Expr &operand, const Expr &escape) const;
     Expr glob(const Expr &operand, const Expr &escape) const;
