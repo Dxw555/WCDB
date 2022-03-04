@@ -122,6 +122,7 @@ public:
     WCTExpr notGlob(const WCTExpr &operand) const;
     WCTExpr notMatch(const WCTExpr &operand) const;
     WCTExpr notRegexp(const WCTExpr &operand) const;
+    WCTExpr instr(const WCTExpr &operand) const;
 
     WCTExpr like(const WCTExpr &operand, const WCTExpr &escape) const;
     WCTExpr glob(const WCTExpr &operand, const WCTExpr &escape) const;
