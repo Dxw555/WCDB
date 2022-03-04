@@ -333,6 +333,11 @@ WCTExpr WCTProperty::like(const WCTExpr &operand) const
     return WCTExpr(*this).like(operand);
 }
 
+WCTExpr WCTProperty::instr(const WCTExpr &operand) const
+{
+    return WCTExpr(*this).instr(operand);
+}
+
 WCTExpr WCTProperty::glob(const WCTExpr &operand) const
 {
     return WCTExpr(*this).glob(operand);
