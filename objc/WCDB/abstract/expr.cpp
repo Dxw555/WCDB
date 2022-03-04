@@ -547,4 +547,12 @@ Expr Expr::snippet() const
     return Expr::Function("SNIPPET", {*this});
 }
 
+Expr Expr::instr(const Expr &operand) const
+{
+    Expr expr;
+    expr.m_description.append("instr(" + m_description + ", " +
+                              operand.m_description + ")");
+    return expr;
+}           
+
 } //namespace WCDB
